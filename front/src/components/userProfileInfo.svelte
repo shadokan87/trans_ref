@@ -149,7 +149,7 @@
         yes: {
           label: "Submit",
           callback: () => {
-            async () => await changePseudo($ui.confirmInput);
+            (async () => await changePseudo($ui.confirmInput))();
             $ui.confirmInput = "";
           },
         },
